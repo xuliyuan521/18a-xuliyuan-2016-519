@@ -1,0 +1,19 @@
+textlight的使用
+获取TextLight：
+git clone https://github.com/master-genius/textlight
+初始化：
+create role tlt with password 'p123456';
+create database textcms owner tlt;
+alter role tlt login;
+
+npm install
+
+./init.sh
+运行的是初始化root用户：
+node createuser.js
+启动服务
+node app.js
+在浏览器访问：
+http://localhost:2022
+访问以下路径即可访问后台，通过root用户以及初始的密码登录，
+http://localhost:2022/adminpage/home

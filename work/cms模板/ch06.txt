@@ -1,0 +1,19 @@
+部署PostgreSQL12，在以下网站安装
+https://get.enterprisedb.com/postgresql/postgresql-12.2-1-windows-x64.exe
+
+内容改成以下配置，重启postgresql服务，或者是重启系统。
+
+
+# TYPE  DATABASE        USER            ADDRESS                 METHOD
+
+# "local" is for Unix domain socket connections only
+local   all             all                                     trust
+# IPv4 local connections:
+host    all             all             127.0.0.1/32            trust
+# IPv6 local connections:
+host    all             all             ::1/128                 trust
+# Allow replication connections from localhost, by a user with the
+# replication privilege.
+local   replication     all                                     trust
+host    replication     all             127.0.0.1/32            trust
+host    replication     all             ::1/128                 trust

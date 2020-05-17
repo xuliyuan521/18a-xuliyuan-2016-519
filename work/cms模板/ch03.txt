@@ -1,0 +1,6 @@
+/搭建Node.js环境
+//下载 Windows Installer (.msi)版本并安装
+//测试
+const os = require('os');
+
+console.log(`Node 运行在 ${os.platform()}`);

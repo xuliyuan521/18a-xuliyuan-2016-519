@@ -1,0 +1,14 @@
+//Node.js来实现一个最小架构的CMS
+//创建目录结构并安装扩展
+//创建一个空目录，然后切换到此目录，然后运行以下命令：
+npm init -y
+
+npm i titbit
+
+npm i titbit-loader
+//使用的框架是titbit
+//切换到文件所在目录
+process.chdir(__dirname);
+
+const titbit = require('titbit');
+const fs = require('fs');

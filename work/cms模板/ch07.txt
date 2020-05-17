@@ -1,0 +1,31 @@
+设计目录结构 并开发：
+目录结构：
+[PROJECT DIR]/:
+    adminpages/:
+        ...
+    pages/:
+        ...
+    static/:
+        ...
+    controller/:
+        ...
+    model/:
+        ...
+    middleware/:
+        ...
+    data/:
+        ...
+    app.js
+    config.js
+    page.js
+富文本编辑器使用wangEditor.js。
+其中：
+adminpages目录是后台页面。
+pages是页面所在目录。
+static是静态文件所在目录，包括js、css等文件。但是pages中同样包括这些文件。
+page.js通过简单的模板机制来整合这些页面。这样可以提供灵活的，方便替换页面的方案。
+controller是控制所在目录。
+model目录的模块都是封装数据库的操作。
+middleware用于集中管理中间件。
+app.js是程序入口文件。
+data目录存储了一些静态数据或者是需要自己编辑的数据。
